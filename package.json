@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/rmemory/react-battle#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "install": "^0.12.1",
     "npm": "^6.3.0",
     "react": "^16.4.2",
