@@ -1,6 +1,9 @@
 var React = require('react');
 var PropTypes = require('prop-types');
+
 var api = require('../utils/api.js');
+
+var Loading = require('./Loading.jsx');
 
 var SelectLanguage = (props) => {
 	var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
@@ -90,7 +93,7 @@ class Popular extends React.Component {
 				/>
 				{/* {JSON.stringify(this.state.repos, null, 2)} */}
 				{
-					!this.state.repos ? <p>Loading...</p> :
+					!this.state.repos ? <Loading speed={200}/> :
 						<RepoGrid repos={this.state.repos} />
 				}
 			</div>
